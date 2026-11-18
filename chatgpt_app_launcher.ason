@@ -1,0 +1,14 @@
+// Configuration template for ChatGPT Proxy Launcher
+// Copy this file to ~/.config/chatgpt_app_launcher.ason
+{
+    // Path to ChatGPT.app.
+    // Supports absolute paths or paths beginning with ~/ or $HOME/.
+    // If omitted or left empty (""), the launcher automatically searches:
+    // 1. /Applications/ChatGPT.app
+    // 2. ~/Applications/ChatGPT.app
+    app_path: "~/Applications/ChatGPT.app"
+
+    // HTTP or HTTPS proxy address.
+    // Default is "http://localhost:8118".
+    proxy: "http://localhost:8118"
+}

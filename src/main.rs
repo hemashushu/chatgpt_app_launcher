@@ -299,4 +299,14 @@ mod tests {
             assert!(parse_proxy(invalid).is_err(), "accepted {invalid}");
         }
     }
+
+    #[test]
+    fn template_config_file_is_valid() {
+        let template_path =
+            Path::new(env!("CARGO_MANIFEST_DIR")).join("chatgpt_app_launcher.ason");
+        let config = read_config(&template_path).expect("template config must be valid");
+        assert_eq!(config.app_path, "~/Applications/ChatGPT.app");
+        assert_eq!(config.proxy, "http://localhost:8118");
+        assert!(parse_proxy(&config.proxy).is_ok());
+    }
 }

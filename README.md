@@ -37,7 +37,7 @@ Keep the proxy service running. If ChatGPT is already open, press **⌘Q** in Ch
 
 ## Configuration
 
-The launcher reads `~/.config/chatgpt_app_launcher.ason` each time it starts. The file is optional, and both fields may be omitted.
+The launcher reads `~/.config/chatgpt_app_launcher.ason` each time it starts. The file is optional, and both fields may be omitted. A template file is provided at [`chatgpt_app_launcher.ason`](chatgpt_app_launcher.ason) in the repository root for convenience.
 
 ```ason
 {
