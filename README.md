@@ -1,6 +1,6 @@
 # ChatGPT Proxy Launcher
 
-![ChatGPT Proxy Launcher](macos/AppIcon.png)
+![ChatGPT Proxy Launcher](macos/AppIcon-256.png)
 
 This is a macOS launcher written in Rust. Double-click it to open ChatGPT using an existing proxy. The proxy address is passed to the launched ChatGPT application and its Chromium network stack; no changes to macOS system proxy settings are needed.
 
